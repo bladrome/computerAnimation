@@ -44,5 +44,4 @@ V =  np.matmul(np.matmul(np.linalg.pinv(np.matmul(augL.T,
 
 # Edit
 mesh.vertices[tailindexlist] = V
-# mesh.vertices[anchorindex] += [0, 80, 0]
 mesh.export("newTrex.obj")
