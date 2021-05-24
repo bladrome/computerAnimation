@@ -312,8 +312,6 @@ triTable = [
 
 
 im = np.fromfile("mri.raw", dtype=np.uint8, count=width*height*depth)
-# im.resize((width, height, depth))
-# im.resize((height, width, depth))
 im.resize((depth, height, width))
 iso = 128
 
