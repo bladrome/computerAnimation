@@ -1,5 +1,5 @@
 # computerAnimation
 
-[[./MarchingCube/result.jpg]]
-
 [[./Laplacian_Surface_Editing/result.jpg]]
+
+[[./MarchingCube/result.jpg]]
