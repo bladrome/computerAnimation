@@ -380,8 +380,9 @@ for i in range(0, im.shape[0] - 1, 1):
                     edgeindex2mesh(tri[e+0], tri[e+1], tri[e+2], coord)
 
 
-for coor, i in vertexlist.items():
-    print("{} {} {} {}".format("v", coor[0], coor[1], coor[2]))
+with open("mri.obj", "w") as f:
+    for coor, i in vertexlist.items():
+        print("{} {} {} {}".format("v", coor[0], coor[1], coor[2]), file=f)
 
-for i in facelist:
-    print("{} {} {} {}".format("f", i[0], i[1], i[2]))
+    for i in facelist:
+        print("{} {} {} {}".format("f", i[0], i[1], i[2]), file=f)
